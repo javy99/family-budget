@@ -1,15 +1,11 @@
 import { Component } from '@angular/core';
+import { BudgetService } from '../services/budget.service';
 import { Router } from '@angular/router';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
-import { BudgetService } from '../budget.service';
 
 @Component({
   selector: 'app-budget-add',
-  standalone: true,
-  imports: [CommonModule, FormsModule],
   templateUrl: './budget-add.component.html',
-  styleUrls: ['./budget-add.component.css'],
+  styleUrl: './budget-add.component.css',
 })
 export class BudgetAddComponent {
   budget = { title: '', amount: 0, category: '' };

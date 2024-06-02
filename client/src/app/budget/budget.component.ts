@@ -1,12 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { BudgetService } from '../budget.service';
-import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
+import { BudgetService } from '../services/budget.service';
 
 @Component({
   selector: 'app-budget',
-  standalone: true,
-  imports: [CommonModule, RouterModule],
   templateUrl: './budget.component.html',
   styleUrl: './budget.component.css',
 })

@@ -1,4 +1,6 @@
-import { Routes } from '@angular/router';
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+
 import { MainComponent } from './main/main.component';
 import { AboutComponent } from './about/about.component';
 import { BudgetComponent } from './budget/budget.component';
@@ -12,3 +14,9 @@ export const routes: Routes = [
   { path: 'budget/add', component: BudgetAddComponent },
   { path: 'budget/edit/:id', component: BudgetEditComponent },
 ];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule],
+})
+export class AppRoutingModule {}
