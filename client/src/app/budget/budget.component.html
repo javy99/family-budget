@@ -1,0 +1,7 @@
+<a routerLink="/budget/add">New budget entry</a>
+<ul>
+  <li *ngFor="let budget of budgets">
+    {{ budget.title }} - {{ budget.amount }} - {{ budget.category }}
+    <a [routerLink]="['/budget/edit', budget.id]">Edit</a>
+  </li>
+</ul>
