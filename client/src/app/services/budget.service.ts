@@ -1,13 +1,14 @@
 import { Injectable, forwardRef, Inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root',
 })
 export class BudgetService {
-  private apiUrl = 'http://localhost:8000/api/budgets';
-
+  private apiUrl = environment.apiUrl + '/budgets';
+v
   constructor(private http: HttpClient) {}
 
   getBudgets(): Observable<any> {
