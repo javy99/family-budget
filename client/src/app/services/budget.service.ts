@@ -1,14 +1,15 @@
 import { Injectable, forwardRef, Inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root',
 })
 export class BudgetService {
-  private apiUrl = environment.apiUrl + '/budgets';
-v
+  // private apiUrl = 'http://localhost:8000/api/budgets';
+  private apiUrl =
+    'https://family-budget-api-a80c24de7eb5.herokuapp.com/api/budgets';
+
   constructor(private http: HttpClient) {}
 
   getBudgets(): Observable<any> {
