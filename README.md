@@ -20,7 +20,7 @@ This application helps you manage your family budget by keeping track of your in
 1. Navigate to the `client` directory:
 
    ```bash
-   cd assignment2_neptun_id/client
+   cd client
    ```
 
 2. Install the dependencies:
@@ -38,7 +38,7 @@ This application helps you manage your family budget by keeping track of your in
 
 1. Navigate to the `server` directory:
    ```bash
-   cd assignment2_neptun_id/server
+   cd server
    ```
 2. Install the dependencies:
 
