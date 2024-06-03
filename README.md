@@ -36,7 +36,7 @@ This application helps you manage your family budget by keeping track of your in
 
 ### Server (Laravel)
 
-1. Navigate to the server directory:
+1. Navigate to the `server` directory:
    ```bash
    cd assignment2_neptun_id/server
    ```
