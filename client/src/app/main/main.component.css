@@ -1,0 +1,56 @@
+.budget-title {
+  font-size: 2.2em;
+  color: #343a40;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1rem;
+}
+
+.income-text {
+  font-size: 1.3em;
+  color: #28a745;
+  font-weight: 500;
+}
+
+.outcome-text {
+  font-size: 1.3em;
+  color: #dc3545;
+  font-weight: 500;
+}
+
+.main-container {
+  background-color: #f8f9fa;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.custom-text {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #343a40;
+}
+
+.card {
+  margin-bottom: 1rem;
+}
+
+.card-header {
+  font-size: 1.2rem;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}

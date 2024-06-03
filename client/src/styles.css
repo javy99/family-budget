@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  background-color: #dcdee0 !important;
+  color: #212529;
+}
+
+.spinner-border {
+  width: 5rem;
+  height: 5rem;
+}
+
+.spinner-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}

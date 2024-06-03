@@ -7,6 +7,7 @@ import { BudgetService } from '../services/budget.service';
   styleUrl: './main.component.css',
 })
 export class MainComponent implements OnInit {
+  loading = true;
   totalIncome = 0;
   totalOutcome = 0;
 
@@ -20,6 +21,7 @@ export class MainComponent implements OnInit {
       this.totalOutcome = budgets
         .filter((b: any) => b.amount < 0)
         .reduce((sum: number, b: any) => sum + b.amount, 0);
+      this.loading = false;
     });
   }
 }
